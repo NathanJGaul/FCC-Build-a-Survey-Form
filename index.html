@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Party Reservation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Christmas Party Reservation Form</h1>
+        <p id="description">Buy your tickets here!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Full Name:</label>
+                <input id="name" type="text" placeholder="Name" required />
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">People in Your Party:</label>
+                <input id="number" type="number" min="1" max="10" placeholder="1" required />
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Choose a Meal:</label>
+                <select id="dropdown" required>
+                    <option value="" disabled selected>(pick one)</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Will you bring kids?</p>
+                <label><input type="radio" name="kids" value="yes" required /> Yes</label>
+                <label><input type="radio" name="kids" value="no" required /> No</label>
+            </div>
+
+            <div class="form-group">
+                <p>Interested in:</p>
+                <label><input type="checkbox" value="fun" /> Fun</label>
+                <label><input type="checkbox" value="dancing" /> Dancing</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Your comments..."></textarea>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
